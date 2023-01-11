@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 
 * {
   margin: 0;
@@ -59,14 +59,13 @@ nav img {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: -18vh;
 }
 
 #logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 100%;
+  font-size: 20px;
   line-height: 20px;
   color: #6070ff;
   padding: 10px 12px;
@@ -82,44 +81,47 @@ nav img {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 180%;
-  line-height: 18px;
+  font-size: 290%;
+  line-height: 25px;
   color: #344563;
-  height: 150px;
   width: 100%;
+  margin-bottom: 10%;
+  position: static;
+  /* height: 150px !important; */
 }
 
 .desc {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 50 !important;
-  font-size: 90%;
-  line-height: 1.2rem;
+  font-size: 130%;
+  line-height: 120%;
   color: #344563;
   height: 146px;
   width: 100%;
-  position: relative;
-  top: -12vh;
+  position: static;
+  margin-bottom: 20%;
 }
 
 .lnk {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 80%;
+  font-size: 120%;
   line-height: 24px;
   color: #7f8cff;
   text-decoration: none;
-  position: relative;
+  position: static;
   left: -34%;
   top: -20vh;
+  align-self: flex-start;
 }
 
 .socials {
   padding: 0;
-  position: absolute;
-  left: -35%;
-  bottom: 35% !important;
+  position: relative;
+  left: -28%;
+  align-self: flex-start;
 }
 
 .socials li {
@@ -127,9 +129,8 @@ nav img {
 }
 
 .socials img {
-  width: 10px;
+  width: 20px;
   margin: 2px;
   position: relative;
   left: -3vh;
-  bottom: 3vh !important;
 }
