@@ -47,9 +47,9 @@ nav img {
   margin: auto;
   background-image: url("./assets/bg.svg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: bottom bottom;
   background-size: 100%;
-  background-position-y: 5vh;
+  background-position-y: 10vh;
 }
 
 #sec1 div {
@@ -66,7 +66,7 @@ nav img {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 100%;
   line-height: 20px;
   color: #6070ff;
   padding: 10px 12px;
@@ -82,7 +82,7 @@ nav img {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 180%;
   line-height: 18px;
   color: #344563;
   height: 150px;
@@ -93,7 +93,7 @@ nav img {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 50 !important;
-  font-size: 0.8em;
+  font-size: 90%;
   line-height: 1.2rem;
   color: #344563;
   height: 146px;
@@ -106,7 +106,7 @@ nav img {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 80%;
   line-height: 24px;
   color: #7f8cff;
   text-decoration: none;
