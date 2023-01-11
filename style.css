@@ -20,7 +20,7 @@ nav {
 }
 
 nav img {
-  margin: 10;
+  margin: 10px;
   width: 45px;
 }
 
@@ -29,12 +29,12 @@ nav img {
   background: white;
   height: 718px;
   border-bottom-left-radius: 20%;
-  padding-top: 180;
+  padding-top: 180px;
 }
 
 .shape1 .rect {
   position: absolute;
-  /* left: 0; */
+  left: 0;
   bottom: 5px;
 }
 
@@ -57,7 +57,7 @@ nav img {
 
 .shape3 .rect {
   position: absolute;
-  bottom: 70;
+  bottom: 70px;
   right: 1px;
 }
 
@@ -78,13 +78,13 @@ nav img {
 
 .shape5 .rect {
   position: absolute;
-  bottom: -20;
+  bottom: -20px;
 }
 
 .shape6 {
   position: absolute;
-  right: 300;
-  bottom: 300;
+  right: 300px;
+  bottom: 300px;
 }
 
 .shape6 .ecl {
@@ -103,9 +103,9 @@ nav img {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20;
+  line-height: 20px;
   color: #6070ff;
-  margin: 10;
+  margin: 10px;
   padding: 8px;
 }
 
@@ -114,10 +114,10 @@ nav img {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40;
+  font-size: 40px;
   line-height: 52px;
   color: #344563;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 }
 
 .desc {
@@ -128,7 +128,7 @@ nav img {
   line-height: 24px;
   color: #344563;
   margin-top: 15px;
-  margin-bottom: 20;
+  margin-bottom: 20px;
 }
 
 .lnk {
