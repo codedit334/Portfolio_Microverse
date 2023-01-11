@@ -10,138 +10,126 @@ main {
   background: #e5e5e5;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: fixed;
   background-color: white;
   z-index: 1000;
+  margin: auto;
+  align-self: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
 }
 
 nav img {
-  margin: 10px;
-  width: 45px;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  right: 2vh;
+  top: 2vh;
+  border-radius: 8px;
 }
 
 #sec1 {
   position: relative;
   background: white;
-  height: 718px;
   border-bottom-left-radius: 20%;
   padding-top: 180px;
+  height: 100vh;
+  margin: auto;
+  background-image: url("./assets/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  background-position-y: 5vh;
 }
 
-.shape1 .rect {
-  position: absolute;
-  left: 0;
-  bottom: 5px;
-}
-
-.shape2 {
-  position: relative;
-  left: 60%;
-  width: 0;
-}
-
-.shape2 .rect {
-  position: relative;
-  left: -14px;
-  bottom: 16px;
-}
-
-.shape3 {
-  position: absolute;
-  right: 0;
-}
-
-.shape3 .rect {
-  position: absolute;
-  bottom: 70px;
-  right: 1px;
-}
-
-.shape4 {
-  position: relative;
-  width: 0;
-  height: 0;
-  left: 20%;
-  top: 10%;
-}
-
-.shape5 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  right: 25%;
-}
-
-.shape5 .rect {
-  position: absolute;
-  bottom: -20px;
-}
-
-.shape6 {
-  position: absolute;
-  right: 300px;
-  bottom: 300px;
-}
-
-.shape6 .ecl {
-  position: relative;
-  top: 13px;
-  left: 19px;
-}
-
-#sec1 article {
+#sec1 div {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 12vh;
 }
 
 #logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 2.5em;
   line-height: 20px;
   color: #6070ff;
-  margin: 10px;
-  padding: 8px;
+  padding: 10px 12px;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 2vh;
+  top: 3vh;
 }
 
 /* Section */
 #nm {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 7.5em;
   line-height: 52px;
   color: #344563;
-  margin-bottom: 10px;
+  margin-bottom: 1.4em;
+  height: 150px;
+  width: 100%;
 }
 
 .desc {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 50 !important;
+  font-size: 3.1em;
+  line-height: 3.2rem;
   color: #344563;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 13.4rem;
+  height: 146px;
+  width: 100%;
 }
 
 .lnk {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 2.9rem;
   line-height: 24px;
   color: #7f8cff;
   text-decoration: none;
-  margin-bottom: 15px;
+  margin-top: 1.9rem;
+  position: relative;
+  left: -20%;
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -35%;
+  bottom: 35% !important;
+}
+
+.socials li {
+  display: inline;
 }
 
 .socials img {
+  width: 50px;
   margin: 5px;
+  position: relative;
+  bottom: 10vh !important;
 }
