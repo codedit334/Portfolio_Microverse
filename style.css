@@ -20,7 +20,7 @@ nav {
 }
 
 nav img {
-  margin: 10px;
+  margin: 10;
   width: 45px;
 }
 
@@ -29,19 +29,19 @@ nav img {
   background: white;
   height: 718px;
   border-bottom-left-radius: 20%;
-  padding-top: 180px;
+  padding-top: 180;
 }
 
 .shape1 .rect {
   position: absolute;
-  left: 0px;
+  /* left: 0; */
   bottom: 5px;
 }
 
 .shape2 {
   position: relative;
   left: 60%;
-  width: 0px;
+  width: 0;
 }
 
 .shape2 .rect {
@@ -52,39 +52,39 @@ nav img {
 
 .shape3 {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 
 .shape3 .rect {
   position: absolute;
-  bottom: 70px;
+  bottom: 70;
   right: 1px;
 }
 
 .shape4 {
   position: relative;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   left: 20%;
   top: 10%;
 }
 
 .shape5 {
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   right: 25%;
 }
 
 .shape5 .rect {
   position: absolute;
-  bottom: -20px;
+  bottom: -20;
 }
 
 .shape6 {
   position: absolute;
-  right: 300px;
-  bottom: 300px;
+  right: 300;
+  bottom: 300;
 }
 
 .shape6 .ecl {
@@ -103,9 +103,9 @@ nav img {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 20;
   color: #6070ff;
-  margin: 10px;
+  margin: 10;
   padding: 8px;
 }
 
@@ -114,10 +114,10 @@ nav img {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 40;
   line-height: 52px;
   color: #344563;
-  margin-bottom: 10px;
+  margin-bottom: 10;
 }
 
 .desc {
@@ -128,7 +128,7 @@ nav img {
   line-height: 24px;
   color: #344563;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 20;
 }
 
 .lnk {
