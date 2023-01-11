@@ -19,11 +19,9 @@ nav {
 nav img {
   margin: 10px;
   width: 45px;
-  /* height: 200px; */
 }
 #sec1 {
   position: relative;
-  /* top: 160px; */
   background: white;
   height: 718px;
   border-bottom-left-radius: 20%;
@@ -61,24 +59,24 @@ nav img {
   top: 10%;
 }
 .shape5 {
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    right: 25%;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  right: 25%;
 }
-.shape5 .rect{
-    position: absolute;
-    bottom: -20px;
+.shape5 .rect {
+  position: absolute;
+  bottom: -20px;
 }
-.shape6{
-    position: absolute;
-    right: 300px;
-    bottom: 300px;
+.shape6 {
+  position: absolute;
+  right: 300px;
+  bottom: 300px;
 }
-.shape6 .ecl{
-    position: relative;
-    top: 13px;
-    left:19px;
+.shape6 .ecl {
+  position: relative;
+  top: 13px;
+  left: 19px;
 }
 #sec1 article {
   width: 90%;
