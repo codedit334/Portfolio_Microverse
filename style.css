@@ -17,6 +17,7 @@ header {
   position: fixed;
   background-color: white;
   z-index: 1000;
+  top: 0;
   margin: auto;
   align-self: center;
 }
@@ -30,8 +31,8 @@ header {
 
 nav img {
   position: relative;
-  width: 90px;
-  height: 90px;
+  width: 40px;
+  height: 40px;
   right: 2vh;
   top: 2vh;
   border-radius: 8px;
@@ -58,14 +59,14 @@ nav img {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 12vh;
+  top: -18vh;
 }
 
 #logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 0.9em;
   line-height: 20px;
   color: #6070ff;
   padding: 10px 12px;
@@ -73,7 +74,7 @@ nav img {
   width: 300px;
   height: 40px;
   left: 2vh;
-  top: 3vh;
+  top: 2.5vh;
 }
 
 /* Section */
@@ -81,10 +82,9 @@ nav img {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 7.5em;
-  line-height: 52px;
+  font-size: 1.5em;
+  line-height: 18px;
   color: #344563;
-  margin-bottom: 1.4em;
   height: 150px;
   width: 100%;
 }
@@ -93,30 +93,29 @@ nav img {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 50 !important;
-  font-size: 3.1em;
-  line-height: 3.2rem;
+  font-size: 0.8em;
+  line-height: 1.2rem;
   color: #344563;
-  margin-top: 15px;
-  margin-bottom: 13.4rem;
   height: 146px;
   width: 100%;
+  position: relative;
+  top: -12vh;
 }
 
 .lnk {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 2.9rem;
+  font-size: 0.8rem;
   line-height: 24px;
   color: #7f8cff;
   text-decoration: none;
-  margin-top: 1.9rem;
   position: relative;
-  left: -20%;
+  left: -34%;
+  top: -20vh;
 }
 
 .socials {
-  margin: 0;
   padding: 0;
   position: absolute;
   left: -35%;
@@ -128,8 +127,9 @@ nav img {
 }
 
 .socials img {
-  width: 50px;
-  margin: 5px;
+  width: 10px;
+  margin: 2px;
   position: relative;
-  bottom: 10vh !important;
+  left: -3vh;
+  bottom: 3vh !important;
 }
