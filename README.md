@@ -197,7 +197,7 @@ I would like to thank Microverse for offering me this opportunity to learn, and 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/codedit334/Hello_Microverse/blob/main/LICENSE) licensed.
 (Check the LICENSE file)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
