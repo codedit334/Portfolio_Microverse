@@ -5,9 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 main {
   background: #e5e5e5;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -16,10 +18,12 @@ nav {
   background-color: white;
   z-index: 1000;
 }
+
 nav img {
   margin: 10px;
   width: 45px;
 }
+
 #sec1 {
   position: relative;
   background: white;
@@ -27,30 +31,36 @@ nav img {
   border-bottom-left-radius: 20%;
   padding-top: 180px;
 }
+
 .shape1 .rect {
   position: absolute;
   left: 0px;
   bottom: 5px;
 }
+
 .shape2 {
   position: relative;
   left: 60%;
   width: 0px;
 }
+
 .shape2 .rect {
   position: relative;
   left: -14px;
   bottom: 16px;
 }
+
 .shape3 {
   position: absolute;
   right: 0px;
 }
+
 .shape3 .rect {
   position: absolute;
   bottom: 70px;
   right: 1px;
 }
+
 .shape4 {
   position: relative;
   width: 0px;
@@ -58,30 +68,36 @@ nav img {
   left: 20%;
   top: 10%;
 }
+
 .shape5 {
   position: absolute;
   width: 0px;
   height: 0px;
   right: 25%;
 }
+
 .shape5 .rect {
   position: absolute;
   bottom: -20px;
 }
+
 .shape6 {
   position: absolute;
   right: 300px;
   bottom: 300px;
 }
+
 .shape6 .ecl {
   position: relative;
   top: 13px;
   left: 19px;
 }
+
 #sec1 article {
   width: 90%;
   margin: auto;
 }
+
 #logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -103,6 +119,7 @@ nav img {
   color: #344563;
   margin-bottom: 10px;
 }
+
 .desc {
   font-family: "Poppins";
   font-style: normal;
@@ -113,6 +130,7 @@ nav img {
   margin-top: 15px;
   margin-bottom: 20px;
 }
+
 .lnk {
   font-family: "Poppins";
   font-style: normal;
@@ -123,6 +141,7 @@ nav img {
   text-decoration: none;
   margin-bottom: 15px;
 }
+
 .socials img {
   margin: 5px;
 }
