@@ -384,6 +384,18 @@ i {
   color: #172b4d;
 }
 
+<<<<<<< HEAD
+=======
+.about button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.languages li:hover {
+  background: #d1d1d493;
+}
+
+>>>>>>> section1
 .tech li:hover {
   background: #ebebffa5;
 }
