@@ -91,7 +91,7 @@ nav img {
   height: 146px;
   width: 100%;
   position: static;
-  margin-bottom: 20%;
+  margin-bottom: 12%;
 }
 
 .lnk {
@@ -103,8 +103,6 @@ nav img {
   color: #7f8cff;
   text-decoration: none;
   position: static;
-  left: -34%;
-  top: -20vh;
   align-self: flex-start;
 }
 
@@ -120,7 +118,7 @@ nav img {
 
 .socials img {
   width: 20px;
-  margin: 2px;
+  margin: 10px 2px;
   position: static;
 }
 
