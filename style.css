@@ -145,7 +145,7 @@ nav img {
   justify-content: center;
   background-color: white;
   border: 1px solid #dfe1e6;
-  margin-top: 180px;
+  margin-top: 100px;
   border-radius: 16px;
 }
 
@@ -167,6 +167,7 @@ nav img {
   font-weight: 700;
   font-size: 200%;
   line-height: 44px;
+  color: #172b4d;
 }
 
 .details {
@@ -222,10 +223,6 @@ nav img {
   list-style: none;
 }
 
-.tech li:hover {
-  background: #ebebffa5;
-}
-
 .js {
   width: 89px !important;
 }
@@ -233,22 +230,22 @@ nav img {
 .card button {
   padding: 1%;
   width: 38%;
-  height: 48px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
   font-weight: 500;
   font-size: 105%;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #396df2;
+  padding: 12px;
+  gap: 10px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
 }
 
-.card button:hover {
-  background-color: #396df2;
-  color: #fff;
-}
 /* About me  */
+
 .about {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -282,7 +279,7 @@ nav img {
   margin-top: 10px;
 }
 
-.about .lnk {
+.about .lnk2 {
   margin-top: 100px;
   position: relative;
   top: 10px;
@@ -291,6 +288,14 @@ nav img {
 
 .socials2 {
   margin-top: 20px;
+}
+
+.socials2 li{
+  display: inline;
+}
+
+i {
+  color: #505F79;
 }
 
 .about button {
@@ -377,4 +382,13 @@ nav img {
   font-size: 40px;
   line-height: 130%;
   color: #172b4d;
+}
+
+.tech li:hover {
+  background: #ebebffa5;
+}
+
+.card button:hover {
+  background-color: #396df2;
+  color: #fff;
 }
