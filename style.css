@@ -361,3 +361,22 @@ nav img {
   line-height: 130%;
   color: #172b4d;
 }
+
+.about button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.languages li:hover {
+  background: #d1d1d493;
+}
+
+.tech li:hover {
+  background: #ebebffa5;
+}
+
+.card button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
