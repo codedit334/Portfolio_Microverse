@@ -222,6 +222,10 @@ nav img {
   list-style: none;
 }
 
+.tech li:hover {
+  background: #ebebffa5;
+}
+
 .js {
   width: 89px !important;
 }
@@ -240,6 +244,10 @@ nav img {
   color: #396df2;
 }
 
+.card button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
 /* About me  */
 .about {
   font-family: "Poppins", sans-serif;
@@ -300,6 +308,11 @@ nav img {
   border-radius: 10px;
 }
 
+.about button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
 .about .languages {
   margin: 40px 5px;
 }
@@ -325,6 +338,10 @@ nav img {
   border-radius: 8px;
   align-items: center;
   margin: 10px 5px;
+}
+
+.languages li:hover {
+  background: #d1d1d493;
 }
 
 .aboutPreMenu {
