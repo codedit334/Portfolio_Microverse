@@ -220,13 +220,11 @@ nav img {
   padding: 1%;
   width: 38%;
   background: #fff;
-  border: 1px solid #dfe1e6;
   font-weight: 500;
   font-size: 105%;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #396df2;
-  padding: 12px;
   gap: 10px;
   height: 48px;
   border: 1px solid #6070ff;
@@ -275,7 +273,6 @@ nav img {
 .socials2 {
   margin: 20px;
   margin-bottom: 10px;
-
 }
 
 .socials2 li {
@@ -302,11 +299,6 @@ i {
   border-radius: 10px;
 }
 
-.about button:hover {
-  background-color: #396df2;
-  color: #fff;
-}
-
 .about .languages {
   margin: 40px 5px;
 }
@@ -323,6 +315,10 @@ i {
   margin: auto;
 }
 
+.languages ul img{
+  margin: 0 10px;
+}
+
 .languages li {
   display: flex;
   gap: 10px;
@@ -332,10 +328,6 @@ i {
   border-radius: 8px;
   align-items: center;
   margin: 10px 5px;
-}
-
-.languages li:hover {
-  background: #d1d1d493;
 }
 
 .aboutPreMenu {
@@ -373,7 +365,7 @@ i {
   color: #172b4d;
 }
 
-<<<<<<< HEAD ======= .about button:hover {
+.about button:hover {
   background-color: #396df2;
   color: #fff;
 }
@@ -382,7 +374,7 @@ i {
   background: #d1d1d493;
 }
 
->>>>>>>section1 .tech li:hover {
+.tech li:hover {
   background: #ebebffa5;
 }
 
