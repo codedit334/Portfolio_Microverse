@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: #e5e5e5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  margin: auto;
+  align-self: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+
+nav img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  right: 2vh;
+  top: 2vh;
+  border-radius: 8px;
+}
+
+#sec1 {
+  position: relative;
+  background: white;
+  border-bottom-left-radius: 20%;
+  padding-top: 180px;
+  height: 100vh;
+  margin: auto;
+  background-image: url("./assets/bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  background-size: 100%;
+  background-position-y: 10vh;
+}
+
+#sec1 div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#logo {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #6070ff;
+  padding: 10px 12px;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 2vh;
+  top: 2.5vh;
+}
+
+/* Section */
+#nm {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 290%;
+  line-height: 25px;
+  color: #344563;
+  width: 100%;
+  margin-bottom: 10%;
+  position: static;
+}
+
+.desc {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 50 !important;
+  font-size: 130%;
+  line-height: 120%;
+  color: #344563;
+  height: 146px;
+  width: 100%;
+  position: static;
+  margin-bottom: 20%;
+}
+
+.lnk {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 120%;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
+  position: static;
+  left: -34%;
+  top: -20vh;
+  align-self: flex-start;
+}
+
+.socials {
+  padding: 0;
+  position: relative;
+  left: -28%;
+  align-self: flex-start;
+}
+
+.socials li {
+  display: inline;
+}
+
+.socials img {
+  width: 20px;
+  margin: 2px;
+  position: relative;
+  left: -3vh;
+}
