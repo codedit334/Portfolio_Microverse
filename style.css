@@ -356,12 +356,10 @@ i {
 }
 
 /* Contact */
-
 .contact {
   text-align: center;
   background-image: url("./assets/bg_contact.svg") !important;
   background-repeat: no-repeat !important;
-  /* background-size: 100%; */
   background-position: center right !important;
   background-color: #6070ff;
   width: 100%;
