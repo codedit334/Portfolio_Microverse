@@ -451,7 +451,7 @@ i {
 }
 
 /* Responsive design */
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   /* header */
   header > a {
     position: relative;
@@ -624,6 +624,10 @@ i {
   }
 }
 
+header {
+  z-index: 3000;
+}
+
 /* Linter requests */
 #sec1 > div {
   width: 90%;
@@ -664,7 +668,7 @@ i {
   color: #fff;
 }
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   #sec1 > div {
     width: 65% !important;
     gap: 10px;
