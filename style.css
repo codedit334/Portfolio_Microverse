@@ -379,14 +379,14 @@ i {
 
 .contact h3 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 280%;
   line-height: 52px;
 }
 
 .contact p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 125%;
   line-height: 28px;
   color: #ebebff;
   width: 87%;
@@ -408,7 +408,7 @@ i {
 
 #full-name {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 110%;
   line-height: 20px;
   color: #172b4d !important;
   padding: 10px;
@@ -416,7 +416,7 @@ i {
 
 #email-address {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 110%;
   line-height: 20px;
   padding: 10px;
   color: #172b4d !important;
@@ -424,8 +424,8 @@ i {
 
 #message {
   font-weight: 400;
-  font-size: 15px;
   line-height: 24px;
+  font-size: 115%;
   color: #b3bac5;
   width: 100%;
   margin-top: 25px;
