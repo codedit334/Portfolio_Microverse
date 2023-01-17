@@ -39,6 +39,10 @@ nav > span {
   display: none;
 }
 
+nav > span li:hover {
+  color: blue;
+}
+
 nav img {
   position: relative;
   width: 40px;
@@ -222,7 +226,7 @@ nav img {
   color: #6070ff;
   text-align: center;
   padding: 4px 12px;
-  width: 100%;
+  width: 53px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
@@ -235,7 +239,7 @@ nav img {
 
 .card button {
   padding: 1%;
-  width: 38%;
+  width: 135px;
   background: #fff;
   font-weight: 500;
   font-size: 105%;
@@ -455,6 +459,60 @@ i {
 }
 
 /* Responsive design */
+@media only screen and (min-width: 1170px) {
+  .lnk {
+    position: relative !important;
+    top: -13px !important;
+  }
+
+  .socials {
+    position: relative !important;
+    top: -13px !important;
+  }
+}
+
+@media only screen and (min-width: 888px) {
+  .lnk {
+    margin-top: 41px !important;
+    position: relative !important;
+    top: -20px !important;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .lnk {
+    margin-top: 0 !important;
+    position: relative !important;
+    top: -40px !important;
+  }
+
+  .desc {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  .lnk {
+    margin-top: 0 !important;
+    position: relative !important;
+    top: -20px !important;
+  }
+
+  .desc {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 490px) {
+  .lnk {
+    margin-top: 0 !important;
+  }
+
+  .desc {
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* header */
   header > a {
@@ -506,7 +564,13 @@ i {
   }
 
   .lnk {
-    margin-top: 20px;
+    position: relative;
+    top: 60px !important;
+  }
+
+  .socials {
+    position: relative;
+    top: 60px;
   }
 
   .socials img {
@@ -514,6 +578,10 @@ i {
   }
 
   /* Section 2: cards */
+  .card {
+    width: 80%;
+  }
+
   .works {
     display: flex;
     flex-direction: column;
@@ -521,7 +589,8 @@ i {
 
   .card > div {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     margin: 20px;
   }
 
@@ -535,12 +604,13 @@ i {
 
   .rev-grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: center;
   }
 
   .card-wrap {
     margin: 30px;
-    width: 92%;
+    width: 82%;
     gap: 33px;
   }
 
@@ -555,6 +625,11 @@ i {
 
   .details ul {
     color: #6b778c;
+  }
+
+  .details li {
+    margin-right: 0;
+    margin-left: 15px;
   }
 
   .tech {
