@@ -39,10 +39,6 @@ nav > span {
   display: none;
 }
 
-nav > span li:hover {
-  color: blue;
-}
-
 nav img {
   position: relative;
   width: 40px;
@@ -712,6 +708,10 @@ i {
 }
 
 /* Linter requests */
+nav > span li:hover {
+  color: blue;
+}
+
 #sec1 > div {
   width: 90%;
   margin: auto;
