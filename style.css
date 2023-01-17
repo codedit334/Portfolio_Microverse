@@ -21,11 +21,11 @@ header {
   width: 100%;
   position: fixed;
   background-color: none;
-  z-index: 1000;
   top: 0;
   margin: auto;
   align-self: center;
   height: 80px;
+  z-index: 3000;
 }
 
 .wrapper {
@@ -622,10 +622,6 @@ i {
     background-size: 90%;
     background-position: left bottom !important;
   }
-}
-
-header {
-  z-index: 3000;
 }
 
 /* Linter requests */
