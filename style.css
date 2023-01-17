@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
 main {
   background: #e5e5e5;
 }
@@ -236,12 +241,15 @@ nav img {
   font-style: normal;
   width: 100%;
   background: white;
-  margin-top: 100px;
+  margin-top: 40px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: center;
   border-top-right-radius: 150px;
+  position: relative;
+  top: 8vh;
+  z-index: 1 !important;
 }
 
 .about > div {
@@ -282,7 +290,8 @@ i {
   color: #505f79;
 }
 
-.about button {
+.about button,
+#submit {
   font-weight: 500;
   font-size: 17px;
   line-height: 141%;
@@ -346,6 +355,87 @@ i {
   border: none;
 }
 
+/* Contact */
+
+.contact {
+  text-align: center;
+  background-image: url("./assets/bg_contact.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  background-position: center right !important;
+  background: #6070ff;
+  width: 100%;
+  height: 779px;
+  color: white;
+  border-top-left-radius: 100px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  z-index: 1000 !important;
+}
+
+.contact h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.contact p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  width: 87%;
+}
+
+.contact form {
+  width: 85%;
+  border: none;
+  outline: none;
+}
+
+.contact input {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 100%;
+  height: 49px;
+  margin-top: 25px;
+}
+
+#full-name {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d !important;
+  padding: 10px;
+}
+
+#email-address {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 10px;
+  color: #172b4d !important;
+}
+
+#message {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  width: 100%;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+#submit {
+  float: left;
+}
+
 /* Linter requests */
 #sec1 > div {
   width: 90%;
@@ -364,6 +454,11 @@ i {
 }
 
 .about button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+#submit:hover {
   background-color: #396df2;
   color: #fff;
 }
