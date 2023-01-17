@@ -508,6 +508,12 @@ i {
   }
 }
 
+@media only screen and (max-width: 390px) {
+  .lnk {
+    margin-top: 40px !important;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* header */
   header > a {
