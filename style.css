@@ -20,12 +20,12 @@ header {
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  background-color: white;
-  z-index: 1000;
+  background-color: none;
   top: 0;
   margin: auto;
   align-self: center;
   height: 80px;
+  z-index: 3000;
 }
 
 .wrapper {
@@ -33,6 +33,10 @@ header {
   justify-content: center;
   position: relative;
   top: 30px;
+}
+
+nav > span {
+  display: none;
 }
 
 nav img {
@@ -150,8 +154,18 @@ nav img {
   width: 100%;
 }
 
+.card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .card img {
   border-radius: 8px;
+}
+
+.port-screen {
+  display: none;
 }
 
 .card h2 {
@@ -208,7 +222,7 @@ nav img {
   color: #6070ff;
   text-align: center;
   padding: 4px 12px;
-  width: 100%;
+  width: 53px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
@@ -221,7 +235,7 @@ nav img {
 
 .card button {
   padding: 1%;
-  width: 38%;
+  width: 135px;
   background: #fff;
   font-weight: 500;
   font-size: 105%;
@@ -266,7 +280,6 @@ nav img {
 }
 
 .about .lnk2 {
-  margin-top: 15px;
   position: relative;
   top: 10px;
   left: 2px;
@@ -277,7 +290,7 @@ nav img {
 }
 
 .socials2 {
-  margin: 20px;
+  margin: 8px;
   margin-bottom: 10px;
 }
 
@@ -367,12 +380,16 @@ i {
   color: white;
   border-top-left-radius: 100px;
   padding-top: 120px;
+  position: relative;
+  z-index: 1000 !important;
+}
+
+.contact > div {
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  position: relative;
-  z-index: 1000 !important;
 }
 
 .contact h3 {
@@ -432,7 +449,270 @@ i {
   float: left;
 }
 
+/* Responsive design */
+@media only screen and (min-width: 1170px) {
+  .lnk {
+    position: relative !important;
+    top: -13px !important;
+  }
+
+  .socials {
+    position: relative !important;
+    top: -13px !important;
+  }
+}
+
+@media only screen and (min-width: 888px) {
+  .lnk {
+    margin-top: 41px !important;
+    position: relative !important;
+    top: -20px !important;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .lnk {
+    margin-top: 0 !important;
+    position: relative !important;
+    top: -40px !important;
+  }
+
+  .desc {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  .lnk {
+    margin-top: 0 !important;
+    position: relative !important;
+    top: -20px !important;
+  }
+
+  .desc {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 490px) {
+  .lnk {
+    margin-top: 0 !important;
+  }
+
+  .desc {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .lnk {
+    margin-top: 40px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* header */
+  header > a {
+    position: relative;
+    left: 10vh;
+  }
+
+  header > nav {
+    position: relative;
+    right: 10vh;
+  }
+
+  nav span {
+    display: block;
+  }
+
+  nav > span ul {
+    width: 350px;
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+    margin: 29.5px 0;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  /* Section 1 */
+  .break {
+    display: none;
+  }
+
+  #sec1 {
+    background-position-y: 0;
+  }
+
+  #nm,
+  .desc {
+    margin: 0;
+  }
+
+  .desc {
+    height: 70px;
+    margin-top: 20px;
+  }
+
+  .lnk {
+    position: relative;
+    top: 60px !important;
+  }
+
+  .socials {
+    position: relative;
+    top: 60px;
+  }
+
+  .socials img {
+    margin-top: 0;
+  }
+
+  /* Section 2: cards */
+  .card {
+    width: 80%;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .port-mob {
+    display: none;
+  }
+
+  .port-screen {
+    display: block;
+  }
+
+  .rev-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: center;
+  }
+
+  .card-wrap {
+    margin: 30px;
+    width: 82%;
+    gap: 33px;
+  }
+
+  .card-wrap h2 {
+    font-size: 250%;
+    line-height: 52px;
+  }
+
+  .details {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .details ul {
+    color: #6b778c;
+  }
+
+  .details li {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .tech {
+    grid-template-columns: 0.5fr 0.5fr 3.2fr;
+  }
+
+  .tech li {
+    width: 53px;
+  }
+
+  .order1 {
+    order: 1;
+  }
+
+  .order2 {
+    order: 2;
+  }
+
+  .order3 {
+    order: 3;
+  }
+
+  .order4 {
+    order: 4;
+  }
+
+  /* Section 3: About */
+  .about > div {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1.6fr 2.2fr;
+  }
+
+  .about-wrap {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-wrap h2 {
+    font-size: 200%;
+  }
+
+  .languages ul {
+    display: flex;
+    max-width: 750px;
+  }
+
+  .languages li {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
+    padding: 16px;
+  }
+
+  .languages img {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Section4: Contact */
+  .contact > div {
+    width: 39%;
+  }
+
+  #submit {
+    float: none;
+  }
+
+  .contact {
+    /* width: 100%; */
+    background-image: url("./assets/bg_contact_screen.svg") !important;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: left bottom !important;
+  }
+}
+
 /* Linter requests */
+nav > span li:hover {
+  color: blue;
+}
+
 #sec1 > div {
   width: 90%;
   margin: auto;
@@ -470,4 +750,16 @@ i {
 .card button:hover {
   background-color: #396df2;
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  #sec1 > div {
+    width: 65% !important;
+    gap: 10px;
+    top: 10vh;
+  }
+
+  .card > div img {
+    width: 100%;
+  }
 }
