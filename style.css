@@ -164,6 +164,10 @@ nav img {
   border-radius: 8px;
 }
 
+.port-screen {
+  display: none;
+}
+
 .card h2 {
   font-style: normal;
   font-weight: 700;
@@ -519,6 +523,14 @@ i {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     margin: 20px;
+  }
+
+  .port-mob {
+    display: none;
+  }
+
+  .port-screen {
+    display: block;
   }
 
   .rev-grid {
