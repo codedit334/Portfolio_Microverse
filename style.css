@@ -457,12 +457,13 @@ i {
 @media only screen and (min-width: 1170px) {
   .lnk {
     position: relative !important;
-    top: -13px !important;
+    top: -10px !important;
+    transform: translate(0%, -5vh);
   }
 
   .socials {
     position: relative !important;
-    top: -13px !important;
+    top: 18px !important;
   }
 }
 
