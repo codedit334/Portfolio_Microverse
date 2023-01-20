@@ -88,6 +88,9 @@ nav img {
   width: 100%;
   margin-bottom: 10%;
   position: static;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1 !important;
 }
 
 .desc {
@@ -101,6 +104,7 @@ nav img {
   width: 100%;
   position: static;
   margin-bottom: 12%;
+  animation: 4s fadeIn;
 }
 
 .lnk {
@@ -113,12 +117,14 @@ nav img {
   text-decoration: none;
   position: static;
   align-self: flex-start;
+  animation: 5s slideInLeft;
 }
 
 .socials {
   padding: 0;
   position: static;
   align-self: flex-start;
+  animation: 4s fadeIn;
 }
 
 .socials li {
@@ -134,7 +140,6 @@ nav img {
 /* Works */
 
 .card {
-  /* min-height: 552px; */
   width: 90%;
   margin: auto;
   display: flex;
@@ -164,15 +169,11 @@ nav img {
 .card a {
   overflow: hidden;
 }
+
 .card img {
   scale: 1;
   border-radius: 8px;
   transition: scale 1s ease-in-out;
-}
-
-.card img:hover {
-  border-radius: 8px;
-  scale: 1.05;
 }
 
 .port-screen {
@@ -530,8 +531,6 @@ i {
     width: auto;
     min-width: 380px;
     max-width: 90%;
-    /* position: relative; */
-    /* left: 20%; */
   }
 
   .works {
@@ -594,70 +593,17 @@ i {
     margin: 0;
   }
 
-  #nm {
-    /* animation-name: slidein;
-    animation-duration: 2s;
-    animation-delay: 1s; */
-    /* -webkit-animation: slidein 5s linear infinite alternate;
-    -moz-animation: slidein 5s linear infinite alternate;
-    -ms-animation: slidein 5s linear infinite alternate;
-    -o-animation: slidein 5s linear infinite alternate;
-    animation: slidein 5s linear infinite alternate; */
-
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-
   @keyframes slidein {
     from {
       margin-left: 100%;
       width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
     }
   }
-
-/*   
-
-  @-moz-keyframes slidein {
-    from {
-      opacity: 0;
-      margin-top: -40px;
-    }
-
-    to {
-      opacity: 1;
-      margin-top: 0;
-    }
-  }
-
-  @-webkit-keyframes slidein {
-    from {
-      opacity: 0;
-      margin-top: -40px;
-    }
-
-    to {
-      opacity: 1;
-      margin-top: 0;
-    }
-  }
-  @-o-keyframes slidein {
-    from {
-      opacity: 0;
-      margin-top: -40px;
-    }
-
-    to {
-      opacity: 1;
-      margin-top: 0;
-    }
-  } */
 
   .desc {
     height: 70px;
@@ -804,19 +750,11 @@ i {
   }
 
   .contact {
-    /* width: 100%; */
     background-image: url("./assets/bg_contact_screen.svg") !important;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: left bottom !important;
   }
-}
-
-#nm {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
 }
 
 @keyframes slidein {
@@ -825,6 +763,7 @@ i {
     margin-left: 100%;
     width: 300%;
   }
+
   to {
     opacity: 1;
     margin-left: 0%;
@@ -832,47 +771,34 @@ i {
   }
 }
 
-.desc {
-  animation: 4s fadeIn;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes fadeIn { 
-  from { opacity: 0; 
-  } 
-  to 
-  { opacity: 1; 
-  } 
-}
-
-.lnk {
-  animation: 5s slideInLeft;
-}
-
-@keyframes slideInLeft { 
-  from { 
-    opacity: 0; 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
     margin-left: 20%;
-  } 
-  to 
-  { opacity: 1; 
+  }
+
+  to {
+    opacity: 1;
     margin-left: 0%;
-  } 
-}
-
-.socials {
-  animation: 4s fadeIn;
-}
-
-@keyframes slideInLeft { 
-  from { 
-    opacity: 0; 
-  } 
-  to 
-  { opacity: 1; 
-  } 
+  }
 }
 
 /* Linter requests */
+.card img:hover {
+  border-radius: 8px;
+  scale: 1.05;
+}
+
 nav > span li:hover {
   color: blue;
 }
