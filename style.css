@@ -708,6 +708,66 @@ i {
   }
 }
 
+#nm {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.desc {
+  animation: 4s fadeIn;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; 
+  } 
+  to 
+  { opacity: 1; 
+  } 
+}
+
+.lnk {
+  animation: 5s slideInLeft;
+}
+
+@keyframes slideInLeft { 
+  from { 
+    opacity: 0; 
+    margin-left: 20%;
+  } 
+  to 
+  { opacity: 1; 
+    margin-left: 0%;
+  } 
+}
+
+.socials {
+  animation: 4s fadeIn;
+}
+
+@keyframes slideInLeft { 
+  from { 
+    opacity: 0; 
+  } 
+  to 
+  { opacity: 1; 
+  } 
+}
+
 /* Linter requests */
 nav > span li:hover {
   color: blue;
