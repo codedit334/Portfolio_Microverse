@@ -161,8 +161,18 @@ nav img {
   gap: 16px;
 }
 
+.card a {
+  overflow: hidden;
+}
 .card img {
+  scale: 1;
   border-radius: 8px;
+  transition: scale 1s ease-in-out;
+}
+
+.card img:hover {
+  border-radius: 8px;
+  scale: 1.05;
 }
 
 .port-screen {
@@ -247,6 +257,8 @@ nav img {
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  transition: color 1s ease-in;
+  transition: background 1s ease-in;
 }
 
 /* About me  */
