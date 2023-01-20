@@ -370,12 +370,10 @@ i {
 }
 
 /* Contact */
-
 .contact {
   text-align: center;
   background-image: url("./assets/bg_contact.svg") !important;
   background-repeat: no-repeat !important;
-  background-size: 100%;
   background-position: center right !important;
   background-color: #6070ff;
   width: 100%;
@@ -424,7 +422,8 @@ i {
   margin-top: 25px;
 }
 
-#full-name {
+#full-name,
+#email-address {
   font-weight: 400;
   font-size: 110%;
   line-height: 20px;
@@ -432,12 +431,9 @@ i {
   padding: 10px;
 }
 
-#email-address {
-  font-weight: 400;
-  font-size: 110%;
-  line-height: 20px;
-  padding: 10px;
-  color: #172b4d !important;
+#full-name::placeholder,
+#email-address::placeholder {
+  color: #172b4d;
 }
 
 #message {
@@ -802,6 +798,66 @@ i {
     background-size: 90%;
     background-position: left bottom !important;
   }
+}
+
+#nm {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.desc {
+  animation: 4s fadeIn;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; 
+  } 
+  to 
+  { opacity: 1; 
+  } 
+}
+
+.lnk {
+  animation: 5s slideInLeft;
+}
+
+@keyframes slideInLeft { 
+  from { 
+    opacity: 0; 
+    margin-left: 20%;
+  } 
+  to 
+  { opacity: 1; 
+    margin-left: 0%;
+  } 
+}
+
+.socials {
+  animation: 4s fadeIn;
+}
+
+@keyframes slideInLeft { 
+  from { 
+    opacity: 0; 
+  } 
+  to 
+  { opacity: 1; 
+  } 
 }
 
 /* Linter requests */
