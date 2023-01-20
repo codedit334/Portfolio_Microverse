@@ -134,7 +134,7 @@ nav img {
 /* Works */
 
 .card {
-  min-height: 552px;
+  /* min-height: 552px; */
   width: 90%;
   margin: auto;
   display: flex;
@@ -149,6 +149,7 @@ nav img {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   margin: 5%;
   width: 100%;
@@ -515,6 +516,27 @@ i {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .card {
+    display: inline-block;
+    width: auto;
+    min-width: 380px;
+    max-width: 90%;
+    /* position: relative; */
+    /* left: 20%; */
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card > div {
+    margin: 30px 0;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* header */
   header > a {
@@ -552,13 +574,82 @@ i {
   }
 
   #sec1 {
-    background-position-y: 0;
+    background-image: url("./assets/bg_screen.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 90%;
+    background-position-y: 5vh;
   }
 
   #nm,
   .desc {
     margin: 0;
   }
+
+  #nm {
+    /* animation-name: slidein;
+    animation-duration: 2s;
+    animation-delay: 1s; */
+    /* -webkit-animation: slidein 5s linear infinite alternate;
+    -moz-animation: slidein 5s linear infinite alternate;
+    -ms-animation: slidein 5s linear infinite alternate;
+    -o-animation: slidein 5s linear infinite alternate;
+    animation: slidein 5s linear infinite alternate; */
+
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/*   
+
+  @-moz-keyframes slidein {
+    from {
+      opacity: 0;
+      margin-top: -40px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+
+  @-webkit-keyframes slidein {
+    from {
+      opacity: 0;
+      margin-top: -40px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+  @-o-keyframes slidein {
+    from {
+      opacity: 0;
+      margin-top: -40px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  } */
 
   .desc {
     height: 70px;
@@ -765,6 +856,7 @@ nav > span li:hover {
   }
 
   .card > div img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 313px;
   }
 }
