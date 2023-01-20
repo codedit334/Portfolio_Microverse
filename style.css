@@ -88,6 +88,9 @@ nav img {
   width: 100%;
   margin-bottom: 10%;
   position: static;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1 !important;
 }
 
 .desc {
@@ -101,6 +104,7 @@ nav img {
   width: 100%;
   position: static;
   margin-bottom: 12%;
+  animation: 4s fadeIn;
 }
 
 .lnk {
@@ -113,12 +117,14 @@ nav img {
   text-decoration: none;
   position: static;
   align-self: flex-start;
+  animation: 5s slideInLeft;
 }
 
 .socials {
   padding: 0;
   position: static;
   align-self: flex-start;
+  animation: 4s fadeIn;
 }
 
 .socials li {
@@ -134,7 +140,6 @@ nav img {
 /* Works */
 
 .card {
-  min-height: 552px;
   width: 90%;
   margin: auto;
   display: flex;
@@ -149,6 +154,7 @@ nav img {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   margin: 5%;
   width: 100%;
@@ -160,8 +166,14 @@ nav img {
   gap: 16px;
 }
 
+.card a {
+  overflow: hidden;
+}
+
 .card img {
+  scale: 1;
   border-radius: 8px;
+  transition: scale 1s ease-in-out;
 }
 
 .port-screen {
@@ -246,6 +258,8 @@ nav img {
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  transition: color 1s ease-in;
+  transition: background 1s ease-in;
 }
 
 /* About me  */
@@ -453,12 +467,13 @@ i {
 @media only screen and (min-width: 1170px) {
   .lnk {
     position: relative !important;
-    top: -13px !important;
+    top: -10px !important;
+    transform: translate(0%, -5vh);
   }
 
   .socials {
     position: relative !important;
-    top: -13px !important;
+    top: 18px !important;
   }
 }
 
@@ -510,6 +525,25 @@ i {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .card {
+    display: inline-block;
+    width: auto;
+    min-width: 380px;
+    max-width: 90%;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card > div {
+    margin: 30px 0;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* header */
   header > a {
@@ -547,12 +581,28 @@ i {
   }
 
   #sec1 {
-    background-position-y: 0;
+    background-image: url("./assets/bg_screen.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 90%;
+    background-position-y: 5vh;
   }
 
   #nm,
   .desc {
     margin: 0;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .desc {
@@ -700,7 +750,6 @@ i {
   }
 
   .contact {
-    /* width: 100%; */
     background-image: url("./assets/bg_contact_screen.svg") !important;
     background-repeat: no-repeat;
     background-size: 90%;
@@ -708,7 +757,48 @@ i {
   }
 }
 
+@keyframes slidein {
+  from {
+    opacity: 0;
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    margin-left: 20%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
 /* Linter requests */
+.card img:hover {
+  border-radius: 8px;
+  scale: 1.05;
+}
+
 nav > span li:hover {
   color: blue;
 }
@@ -760,6 +850,7 @@ nav > span li:hover {
   }
 
   .card > div img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 313px;
   }
 }
