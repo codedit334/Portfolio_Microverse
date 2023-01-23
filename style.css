@@ -852,5 +852,6 @@ nav > span li:hover {
   .card > div img {
     max-width: 100%;
     min-width: 313px;
+    width: 100%;
   }
 }
