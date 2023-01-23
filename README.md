@@ -76,7 +76,7 @@ HTML, CSS, NodeJS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--The live link will be updated as soon as it is available.
+-Link: https://codedit334.github.io/.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +130,7 @@ To check for css errors run:
 
 ### Deployment
 
-You can deploy this project using your preferd hosting platform.
+Deployed using Github Pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
