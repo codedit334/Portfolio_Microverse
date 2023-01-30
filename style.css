@@ -868,12 +868,12 @@ nav > span li:hover {
 }
 
 .about button:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
   color: #fff;
 }
 
 #submit:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
   color: #fff;
 }
 
@@ -886,8 +886,32 @@ nav > span li:hover {
 }
 
 .card button:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
   color: #fff;
+}
+
+.about button:disabled,
+.card button:disabled,
+#submit:disabled {
+  background-color: transparent;
+  color: #5e6c84;
+  border: 1px solid lightgrey;
+}
+
+.about button:visited,
+.card button:visited,
+#submit:visited {
+  background-color: #2230d2;
+  color: #fff;
+  border: none;
+}
+
+.about button:enabled,
+.card button:enabled,
+#submit:enabled {
+  background-color: transparent;
+  color: #6070ff;
+  border: 1px solid #7f8cff;
 }
 
 @media only screen and (min-width: 768px) {
