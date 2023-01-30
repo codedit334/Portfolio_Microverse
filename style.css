@@ -168,12 +168,14 @@ nav img {
 
 .card a {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .card img {
   scale: 1;
   border-radius: 8px;
-  transition: scale 1s ease-in-out;
+  transition: scale 1s ease-out;
 }
 
 .port-screen {
@@ -526,6 +528,52 @@ i {
 }
 
 @media only screen and (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6070ff;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6070ff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .nav-menu img {
+    order: 2;
+  }
+
+  .nav-menu-list {
+    margin: 80px 60px;
+  }
+
+  .nav-menu ul li {
+    list-style: none;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 20px 0;
+  }
+
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+  }
+
   .card {
     display: inline-block;
     width: auto;

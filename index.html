@@ -19,12 +19,13 @@
                 <div id="logo">My logo</div>
             </a>
             <nav>
-                <div><img src="./assets/ham.svg" alt="Menu icon"> </div>
-                <span>
-                    <ul>
-                        <li>Portfolio</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                <div><img class="nav-btn-ham" src="./assets/ham.svg" alt="Menu icon"> </div>
+                <span class="nav-menu">
+                    <img class="nav-btn-x" src="./assets/x.svg" alt="Close icon">
+                    <ul class="nav-menu-list">
+                        <li><a href="#works">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </span>
             </nav>
@@ -61,7 +62,7 @@
 
         </section>
 
-        <section class="works">
+        <section class="works" id="works">
             <div class="card order3">
                 <div>
                     <a href=""><img src="./assets/Snapshoot Portfolio.png" alt="Portfolio"></a>
@@ -168,7 +169,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div>
                 <div class="about-wrap">
                     <h2>About<br>Myself</h2>
@@ -223,7 +224,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div>
                 <h3>Contact me</h3>
                 <p>If you have an application you are interested in developing, a feature that you need built or a
@@ -242,6 +243,7 @@
             </div>
         </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
