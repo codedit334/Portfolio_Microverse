@@ -569,6 +569,11 @@ i {
     margin: 20px 0;
   }
 
+  .nav-menu a{
+    color: white;
+    text-decoration: none;
+  }
+
   .card {
     display: inline-block;
     width: auto;
