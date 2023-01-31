@@ -594,6 +594,16 @@ i {
 
   /* Modals */
   #modals {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 13000;
+  }
+  #modals.modal-active{
+    display: block;
     position: fixed;
     left: 0;
     top: 0;
@@ -655,11 +665,15 @@ i {
     width: 100%;
     height: 200px;
   }
+  .part-2 {
+    width: 100%;
+    height: 200px;
+  }
 
   .part-2 > img {
     width: 100%;
     height: 100%;
-    object-fit:;
+    object-fit::
     border-radius: 1px !important;
     margin: 15px 0;
   }
@@ -923,6 +937,16 @@ i {
   }
 
   #modals {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 13000;
+  }
+  #modals.modal-active {
+    display: block;
     position: fixed;
     left: 0;
     top: 0;
