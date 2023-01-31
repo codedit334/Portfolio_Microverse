@@ -320,6 +320,7 @@ i {
 }
 
 .about button,
+.modal-buttons button,
 #submit {
   font-weight: 500;
   font-size: 17px;
@@ -590,6 +591,123 @@ i {
   .card > div {
     margin: 30px 0;
   }
+
+  /* Modals */
+  #modals {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 13000;
+  }
+
+  .modal-bg-top {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgrey;
+    opacity: 0.9;
+  }
+
+  .modal-bg > div {
+    background-color: white;
+    width: 85%;
+    height: 87vh;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    padding: 25px;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    overflow: scroll;
+    opacity: 1 !important;
+  }
+
+  .part-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .part-1.wrapper-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part-1.wrapper h3 {
+    font-size: 40px;
+    line-height: 130%;
+    color: #091e42;
+  }
+
+  .part-1 > span {
+    font-size: 180%;
+    color: rgb(165, 164, 164);
+    cursor: pointer;
+  }
+
+  .part-1 > span:hover {
+    color: lightgray;
+  }
+
+  .part-2 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .part-2 > img {
+    width: 100%;
+    height: 100%;
+    object-fit:;
+    border-radius: 1px !important;
+    margin: 15px 0;
+  }
+
+  .part-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part-3 > p {
+    width: 100% !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #344563;
+    margin-top: 40px;
+  }
+
+  .modal-wrapper{
+    margin-top: 40px;
+  }
+  .part-3 > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .part-3 > div > div ul, .modal-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    text-align: center;
+  }
+  .modal-pill {
+    width: 90px !important;
+  }
+  .modal-buttons{
+    align-self: center !important;
+    width: 90%;
+  }
+  .modal-buttons button {
+    font-size: 100%;
+    margin-top: 20px;
+  }
+  .modal-buttons button img {
+    position: relative;
+    top: 5px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -803,6 +921,116 @@ i {
     background-size: 90%;
     background-position: left bottom !important;
   }
+
+  #modals {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 13000;
+  }
+
+  .modal-bg-top {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgrey;
+    opacity: 0.9;
+  }
+
+  .modal-bg > div {
+    background-color: white;
+    width: 85%;
+    height: 87vh;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    padding: 25px;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    overflow: scroll;
+    opacity: 1 !important;
+  }
+
+  .part-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .part-1.wrapper-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part-1.wrapper h3 {
+    font-size: 40px;
+    line-height: 130%;
+    color: #091e42;
+  }
+
+  .part-1 > span {
+    font-size: 180%;
+    color: rgb(165, 164, 164);
+    cursor: pointer;
+  }
+
+  .part-1 > span:hover {
+    color: lightgray;
+  }
+
+  .part-2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .part-2 > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1px !important;
+    margin: 15px 0;
+  }
+
+  .part-3 {
+    display: flex;
+  }
+
+  .part-3 > p {
+    width: 120% !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #344563;
+    margin-top: 40px;
+  }
+
+  .modal-wrapper{
+    margin-top: 40px;
+  }
+  .part-3 > div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .part-3 > div > div ul, .modal-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    text-align: center;
+  }
+  .modal-pill {
+    width: 90px !important;
+  }
+  .modal-buttons button {
+    font-size: 100%;
+    margin-top: 20px;
+  }
+  .modal-buttons button img {
+    position: relative;
+    top: 5px;
+  }
 }
 
 @keyframes slidein {
@@ -885,13 +1113,15 @@ nav > span li:hover {
   background: #ebebffa5;
 }
 
-.card button:hover {
+.card button:hover,
+.modal-buttons button:hover {
   background-color: #6070ff;
   color: #fff;
 }
 
 .about button:disabled,
 .card button:disabled,
+.modal-buttons button:disabled,
 #submit:disabled {
   background-color: transparent;
   color: #5e6c84;
@@ -900,18 +1130,11 @@ nav > span li:hover {
 
 .about button:visited,
 .card button:visited,
+.modal-buttons button:visited,
 #submit:visited {
   background-color: #2230d2;
   color: #fff;
   border: none;
-}
-
-.about button:enabled,
-.card button:enabled,
-#submit:enabled {
-  background-color: transparent;
-  color: #6070ff;
-  border: 1px solid #7f8cff;
 }
 
 @media only screen and (min-width: 768px) {
