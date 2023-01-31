@@ -31,6 +31,7 @@ header {
 a {
   text-decoration: none;
 }
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -535,7 +536,7 @@ i {
   display: block;
 }
 
-.modal-not-2{
+.modal-not-2 {
   display: none;
 }
 
@@ -543,10 +544,11 @@ i {
   .modal-active-2 {
     display: block !important;
   }
-  
-  .modal-not-2{
+
+  .modal-not-2 {
     display: none !important;
   }
+
   .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -620,7 +622,8 @@ i {
     height: 100vh;
     z-index: 13000;
   }
-  #modals.modal-active{
+
+  #modals.modal-active {
     display: block;
     position: fixed;
     left: 0;
@@ -629,9 +632,7 @@ i {
     height: 100vh;
     z-index: 13000;
   }
-  #modals > div{
-    display:none;
-  }
+
   .modal-bg-top {
     position: fixed;
     width: 100%;
@@ -649,7 +650,7 @@ i {
     top: 30px;
     padding: 25px;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
     overflow: scroll;
     opacity: 1 !important;
@@ -685,10 +686,6 @@ i {
     width: 100%;
     height: 200px;
   }
-  .part-2 {
-    width: 100%;
-    height: 200px;
-  }
 
   .part-2 > img {
     width: 100%;
@@ -711,41 +708,49 @@ i {
     margin-top: 40px;
   }
 
-  .modal-wrapper{
+  .modal-wrapper {
     margin-top: 40px;
   }
+
   .part-3 > div {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .part-3 > div > div ul, .modal-tech {
+  .part-3 > div > div ul,
+  .modal-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     text-align: center;
   }
-  .part-3 > div > div ul li:nth-child(3) {
-    width: 100px;
-  }
-  .modal-tech > ul > li:nth-child(2){
-    width: 80px;
-  }
+
   .modal-pill {
     width: 90px !important;
   }
-  .modal-buttons{
+
+  .modal-buttons {
     align-self: center !important;
     width: 90%;
   }
+
   .modal-buttons button {
     font-size: 89%;
     margin-top: 20px;
   }
+
   .modal-buttons button img {
     position: relative;
     top: 5px;
+  }
+
+  #modals > div {
+    display: none;
+  }
+
+  .part-3 > div > div ul li:nth-child(3) {
+    width: 100px;
   }
 }
 
@@ -753,10 +758,11 @@ i {
   .modal-active-2 {
     display: block !important;
   }
-  
-  .modal-not-2{
+
+  .modal-not-2 {
     display: none !important;
   }
+
   /* header */
   header > a {
     position: relative;
@@ -840,9 +846,11 @@ i {
   .card {
     width: 80%;
   }
+
   .card a {
     justify-content: flex-start;
   }
+
   .works {
     display: flex;
     flex-direction: column;
@@ -979,6 +987,7 @@ i {
     height: 100vh;
     z-index: 13000;
   }
+
   #modals.modal-active {
     display: block;
     position: fixed;
@@ -988,9 +997,7 @@ i {
     height: 100vh;
     z-index: 13000;
   }
-  #modals > div{
-    display: none;
-  }
+
   .modal-bg-top {
     position: fixed;
     width: 100%;
@@ -1008,7 +1015,7 @@ i {
     top: 30px;
     padding: 25px;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
     overflow: scroll;
     opacity: 1 !important;
@@ -1065,37 +1072,43 @@ i {
     margin-top: 40px;
   }
 
-  .modal-wrapper{
+  .modal-wrapper {
     margin-top: 40px;
   }
+
   .part-3 > div {
     display: flex;
     flex-direction: column;
     width: 60%;
   }
 
-  .part-3 > div > div ul, .modal-tech {
+  .part-3 > div > div ul,
+  .modal-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     text-align: center;
   }
+
   .part-3 > div > div ul li:nth-child(3) {
     width: 100px;
   }
-  .modal-tech > ul > li:nth-child(2){
-    width: 80px;
-  }
+
   .modal-pill {
     width: 90px !important;
   }
+
+  #modals > div {
+    display: none;
+  }
+
   .modal-buttons button {
     font-size: 89%;
     width: 150px;
     margin: 5px;
     margin-top: 20px;
-
   }
+
   .modal-buttons button img {
     position: relative;
     top: 5px;

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const ham = document.querySelector('.nav-btn-ham');
 const x = document.querySelector('.nav-btn-x');
 const navMenu = document.querySelector('.nav-menu');
@@ -12,48 +13,48 @@ document.querySelectorAll('.nav-menu-list').forEach((n) => n.addEventListener('c
   navMenu.classList.toggle('active');
 }));
 
-  let modal = [
-    {
-      modalTitle:"Tonic",
-      modalTitle2:"CANOPY",
-      modalListTech: ['Back End Dev','2015'],
-      modalList : ['html','css','javascript'],
-      modalImg : './assets/Portfolio1.png',
-      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    },
-    {
-      modalTitle:"Multi-Post Stories",
-      modalTitle2:"FACEBOOK",
-      modalListTech: ['Full Stack Dev','2015'],
-      modalList : ['html','css','javascript'],
-      modalImg : './assets/Snapshoot Portfolio (2).png',
-      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    },
-    {
-      modalTitle:"Facebook 360",
-      modalTitle2:"FACEBOOK",
-      modalListTech: ['Full Stack Dev','2015'],
-      modalList : ['html','css','javascript'],
-      modalImg : './assets/Snapshoot Portfolio.png',
-      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    },
-    {
-      modalTitle:"Uber Navigation Stories",
-      modalTitle2:"Uber",
-      modalListTech: ['Lead Devveloper','2018'],
-      modalList : ['html','css','javascript'],
-      modalImg : './assets/Snapshoot Portfolio (f).png',
-      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    }
-   
-  ]
+// Modals to html
+const modal = [
+  {
+    modalTitle: 'Tonic',
+    modalTitle2: 'CANOPY',
+    modalListTech: ['Back End Dev', '2015'],
+    modalList: ['html', 'css', 'javascript'],
+    modalImg: './assets/Portfolio1.png',
+    modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  },
+  {
+    modalTitle: 'Multi-Post Stories',
+    modalTitle2: 'FACEBOOK',
+    modalListTech: ['Full Stack Dev', '2015'],
+    modalList: ['html', 'css', 'javascript'],
+    modalImg: './assets/Snapshoot Portfolio (2).png',
+    modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  },
+  {
+    modalTitle: 'Facebook 360',
+    modalTitle2: 'FACEBOOK',
+    modalListTech: ['Full Stack Dev', '2015'],
+    modalList: ['html', 'css', 'javascript'],
+    modalImg: './assets/Snapshoot Portfolio.png',
+    modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  },
+  {
+    modalTitle: 'Uber Navigation Stories',
+    modalTitle2: 'Uber',
+    modalListTech: ['Lead Devveloper', '2018'],
+    modalList: ['html', 'css', 'javascript'],
+    modalImg: './assets/Snapshoot Portfolio (f).png',
+    modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  },
 
-  const modals = document.querySelector('#modals');
+];
+
+const modals = document.querySelector('#modals');
 
 let modalCount = 1;
 
 modal.forEach((o) => {
-
   let techStack = '';
   let techStack2 = '';
 
@@ -99,9 +100,6 @@ modal.forEach((o) => {
   modalCount += 1;
 });
 
-// document.querySelector(`.modal-${i}`).toggle('modal-not-2');
-
-
 // Show Modal
 const showModal = (i) => {
   modals.classList.toggle('modal-active');
@@ -109,14 +107,7 @@ const showModal = (i) => {
   document.querySelector(`.modal-${i}`).classList.toggle('modal-active-2');
   document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-not-2');
   document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-active-2');
-  // document.querySelector(`.modal-bg`).classList.toggle('modal-not-2');
-  // document.querySelector(`.modal-bg`).classList.toggle('modal-active-2');
   document.querySelector('.modal-bg-top').style.display = 'block';
-  // document.querySelector('.modal-bg').style.display = 'flex';
-  // document.querySelector(`.modal-${i}`).style.display = 'block !important';
-  // document.querySelector(`.modal-${i}`).setAttribute('style', 'display:block !important');
-  // ocument.querySelector(`.modal-${i}`).style.cssText = 'display:block !important';
-  
 };
 
 // Close Modal
@@ -126,14 +117,7 @@ function closeModal(i) {
   document.querySelector(`.modal-${i}`).classList.toggle('modal-not-2');
   document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-not-2');
   document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-active-2');
-  // document.querySelector(`.modal-bg`).classList.toggle('modal-active-2');
-  // document.querySelector(`.modal-bg`).classList.toggle('modal-not-2');
   document.querySelector('.modal-bg-top').style.display = 'none';
-  // document.querySelector('.modal-bg').style.display = 'none';
-  // document.querySelector(`.modal-${i}`).style.display = 'none';
-  // document.querySelector(`.modal-${i}`).setAttribute('style', 'display:none');
-  // document.querySelector(`.modal-${i}`).style.cssText = 'display:none';
 }
 
 /* eslint-enable no-unused-vars */
-   
