@@ -15,35 +15,35 @@ document.querySelectorAll('.nav-menu-list').forEach((n) => n.addEventListener('c
   let modal = [
     {
       modalTitle:"Tonic",
-      modalTil:"CANOPY",
+      modalTitle2:"CANOPY",
       modalListTech: ['Back End Dev','2015'],
       modalList : ['html','css','javascript'],
       modalImg : './assets/Portfolio1.png',
-      modalText :"A daily selection of privately personalized reads; no accounts or sign-ups required."
+      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     },
     {
       modalTitle:"Multi-Post Stories",
-      modalTil:"FACEBOOK",
+      modalTitle2:"FACEBOOK",
       modalListTech: ['Full Stack Dev','2015'],
       modalList : ['html','css','javascript'],
       modalImg : './assets/Snapshoot Portfolio (2).png',
-      modalText :"Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends."
+      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     },
     {
       modalTitle:"Facebook 360",
-      modalTil:"FACEBOOK",
+      modalTitle2:"FACEBOOK",
       modalListTech: ['Full Stack Dev','2015'],
       modalList : ['html','css','javascript'],
       modalImg : './assets/Snapshoot Portfolio.png',
-      modalText :"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR."
+      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     },
     {
       modalTitle:"Uber Navigation Stories",
-      modalTil:"Uber",
+      modalTitle2:"Uber",
       modalListTech: ['Lead Devveloper','2018'],
       modalList : ['html','css','javascript'],
       modalImg : './assets/Snapshoot Portfolio (f).png',
-      modalText :"A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car."
+      modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     }
    
   ]
@@ -62,13 +62,13 @@ modal.forEach((o) => {
 
   modals.innerHTML += `
   
-  <div class="modal-bg">
-  <div class="modal-${modalCount}">
+  <div class="modal-bg modal-bg-${modalCount} modal-not-2">
+  <div class="modal-${modalCount} modal-not-2">
       <div class="part-1">
           <div class="wrapper-1">
               <h3>${o.modalTitle}</h3>
               <div class="details">
-                  <h3><b>${o.modalTil}</b></h3>
+                  <h3><b>${o.modalTitle2}</b></h3>
                   <ul>
                       ${techStack2}
                   </ul>
@@ -99,18 +99,40 @@ modal.forEach((o) => {
   modalCount += 1;
 });
 
+// document.querySelector(`.modal-${i}`).toggle('modal-not-2');
+
+
 // Show Modal
 const showModal = (i) => {
   modals.classList.toggle('modal-active');
+  document.querySelector(`.modal-${i}`).classList.toggle('modal-not-2');
+  document.querySelector(`.modal-${i}`).classList.toggle('modal-active-2');
+  document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-not-2');
+  document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-active-2');
+  // document.querySelector(`.modal-bg`).classList.toggle('modal-not-2');
+  // document.querySelector(`.modal-bg`).classList.toggle('modal-active-2');
   document.querySelector('.modal-bg-top').style.display = 'block';
-  document.querySelector(`.modal-${i}`).style.display = 'block';
+  // document.querySelector('.modal-bg').style.display = 'flex';
+  // document.querySelector(`.modal-${i}`).style.display = 'block !important';
+  // document.querySelector(`.modal-${i}`).setAttribute('style', 'display:block !important');
+  // ocument.querySelector(`.modal-${i}`).style.cssText = 'display:block !important';
+  
 };
 
 // Close Modal
 function closeModal(i) {
   modals.classList.toggle('modal-active');
+  document.querySelector(`.modal-${i}`).classList.toggle('modal-active-2');
+  document.querySelector(`.modal-${i}`).classList.toggle('modal-not-2');
+  document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-not-2');
+  document.querySelector(`.modal-bg-${i}`).classList.toggle('modal-active-2');
+  // document.querySelector(`.modal-bg`).classList.toggle('modal-active-2');
+  // document.querySelector(`.modal-bg`).classList.toggle('modal-not-2');
   document.querySelector('.modal-bg-top').style.display = 'none';
-  document.querySelector(`.modal-${i}`).style.display = 'none';
+  // document.querySelector('.modal-bg').style.display = 'none';
+  // document.querySelector(`.modal-${i}`).style.display = 'none';
+  // document.querySelector(`.modal-${i}`).setAttribute('style', 'display:none');
+  // document.querySelector(`.modal-${i}`).style.cssText = 'display:none';
 }
 
 /* eslint-enable no-unused-vars */
