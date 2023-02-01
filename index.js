@@ -53,12 +53,12 @@ const modals = document.querySelector('#modals');
 
 let modalCount = 1;
 
-modal.forEach((o) => {
+modal.forEach((obj) => {
   let techStack = '';
   let techStack2 = '';
 
-  for (let i = 0; i < o.modalList.length; i += 1) techStack += `<li>${o.modalList[i]}</li>`;
-  for (let i = 0; i < o.modalListTech.length; i += 1) techStack2 += `<li>&bull;&nbsp;&nbsp; ${o.modalListTech[i]}</li>`;
+  for (let i = 0; i < obj.modalList.length; i += 1) techStack += `<li>${obj.modalList[i]}</li>`;
+  for (let i = 0; i < obj.modalListTech.length; i += 1) techStack2 += `<li>&bull;&nbsp;&nbsp; ${obj.modalListTech[i]}</li>`;
 
   modals.innerHTML += `
   
@@ -66,9 +66,9 @@ modal.forEach((o) => {
   <div class="modal-${modalCount} modal-not-2">
       <div class="part-1">
           <div class="wrapper-1">
-              <h3>${o.modalTitle}</h3>
+              <h3>${obj.modalTitle}</h3>
               <div class="details">
-                  <h3><b>${o.modalTitle2}</b></h3>
+                  <h3><b>${obj.modalTitle2}</b></h3>
                   <ul>
                       ${techStack2}
                   </ul>
@@ -77,10 +77,10 @@ modal.forEach((o) => {
           <span onclick="closeModal(${modalCount})" >&times;</span>
       </div>
       <div class="part-2">
-          <img src="${o.modalImg}" alt="portfolio">
+          <img src="${obj.modalImg}" alt="portfolio">
       </div>
       <div class="part-3">
-          <p class="text">${o.modalText}</p>
+          <p class="text">${obj.modalText}</p>
           <div class="modal-wrapper">
               <div class="tech modal-tech">
                   <ul>
