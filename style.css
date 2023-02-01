@@ -325,7 +325,7 @@ i {
 
 .about button,
 .modal-buttons button,
-#submit {
+#submit-btn-btn {
   font-weight: 500;
   font-size: 17px;
   line-height: 141%;
@@ -338,6 +338,13 @@ i {
   background: #fff;
   border: 1px solid #396df2;
   border-radius: 10px;
+}
+
+.error-msg {
+  color: red;
+  position: relative;
+  top: 8px;
+  font-weight: bold;
 }
 
 .about .languages {
@@ -466,7 +473,7 @@ i {
   padding: 10px;
 }
 
-#submit {
+#submit-btn-btn {
   float: left;
 }
 
@@ -967,7 +974,7 @@ i {
     width: 39%;
   }
 
-  #submit {
+  #submit-btn-btn {
     float: none;
   }
 
@@ -1182,7 +1189,7 @@ nav > span li:hover {
   color: #fff;
 }
 
-#submit:hover {
+#submit-btn-btn:hover {
   background-color: #6070ff;
   color: #fff;
 }
@@ -1204,7 +1211,7 @@ nav > span li:hover {
 .about button:disabled,
 .card button:disabled,
 .modal-buttons button:disabled,
-#submit:disabled {
+#submit-btn-btn:disabled {
   background-color: transparent;
   color: #5e6c84;
   border: 1px solid lightgrey;
@@ -1213,7 +1220,7 @@ nav > span li:hover {
 .about button:visited,
 .card button:visited,
 .modal-buttons button:visited,
-#submit:visited {
+#submit-btn-btn:visited {
   background-color: #2230d2;
   color: #fff;
   border: none;
