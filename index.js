@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 const ham = document.querySelector('.nav-btn-ham');
 const x = document.querySelector('.nav-btn-x');
 const navMenu = document.querySelector('.nav-menu');
@@ -120,4 +119,6 @@ function closeModal(i) {
   document.querySelector('.modal-bg-top').style.display = 'none';
 }
 
-/* eslint-enable no-unused-vars */
+showModal(1);
+closeModal(1);
+
