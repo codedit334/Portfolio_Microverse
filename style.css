@@ -343,7 +343,7 @@ i {
 .error-msg {
   color: red;
   position: relative;
-  top :8px;
+  top: 8px;
   font-weight: bold;
 }
 
