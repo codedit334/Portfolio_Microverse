@@ -160,4 +160,7 @@ form.addEventListener('input', () => {
 });
 
 const inputSaved = JSON.parse(localStorage.getItem('inputSave'));
-console.log(inputSaved);
+
+inputName.value = inputSaved.name;
+inputEmail.value = inputSaved.email;
+inputMessage.value = inputSaved.message;
