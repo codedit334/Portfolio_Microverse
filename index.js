@@ -141,3 +141,23 @@ form.addEventListener('submit', (event) => {
 
   validateEmail(form.elements['email-address']);
 });
+
+// Localstorage
+const inputName = document.querySelector('#full-name');
+const inputEmail = document.querySelector('#email-address');
+const inputMessage = document.querySelector('#message');
+
+let inputObj;
+
+form.addEventListener('input', () => {
+  inputObj = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputMessage.value,
+  };
+
+  localStorage.setItem('inputSave', JSON.stringify(inputObj));
+});
+
+const inputSaved = JSON.parse(localStorage.getItem('inputSave'));
+console.log(inputSaved);
